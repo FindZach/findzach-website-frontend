@@ -1,0 +1,105 @@
+<app-navbar></app-navbar>
+
+<div *ngIf="!registerFormShowing" id="login" class="w-full mx-auto max-w-xs py-10 min-h-screen">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" [formGroup]="loginForm">
+    <div class="mb-4 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Username
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" formControlName="username">
+    </div>
+    <div class="mb-6 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
+      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" formControlName="password" id="password" type="password" placeholder="******************">
+      <p class="text-red-500 text-xs italic">Please choose a password.</p>
+    </div>
+
+    <div class="space-y-4">
+    <div class="flex items-center justify-between">
+      <button (click)="onAccountRegistration()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Sign In
+      </button>
+      <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        Forgot Password?
+      </a>
+
+<div class="offcanvas offcanvas-bottom fixed bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 left-0 right-0 border-none h-1/3 max-h-full" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header flex items-center justify-between p-4">
+    <h5 class="offcanvas-title mb-0 leading-normal font-semibold text-center" id="offcanvasBottomLabel">Forgot your password?</h5>
+    <button type="button" class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body flex-grow p-4 overflow-y-auto small">
+    Todo: Create Password Request Here :)
+  </div>
+</div>
+
+    </div>
+
+    <div class="flex items-center justify-center">
+          <button (click)="onCreateAccountButtonClick()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Create an account
+      </button>
+    </div>
+    </div>
+  </form>
+  <p class="text-center text-gray-500 text-xs">
+    Keep your password protected!
+  </p>
+</div>
+
+<div *ngIf="registerFormShowing" id="register" class="w-full mx-auto max-w-xs py-10 min-h-screen">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" [formGroup]="loginForm">
+
+    <div class="mb-4 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Username
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" formControlName="username">
+    </div>
+
+    <div class="mb-4 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Email
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="email@findzach.com" formControlName="email">
+    </div>
+
+
+    <div class="mb-4 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+        Birth Date
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="birthday" type="date" placeholder="8/25/1997" formControlName="birthday">
+    </div>
+
+    <div class="mb-6 form-group">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+        Password
+      </label>
+      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" formControlName="password" id="password" type="password" placeholder="******************">
+      <p class="text-red-500 text-xs italic">Please choose a password.</p>
+    </div>
+
+    <div class="space-y-4">
+    <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Sign Up
+      </button>
+      <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+        Forgot Password?
+      </a>
+    </div>
+
+        <div class="flex items-center justify-center">
+          <button (click)="onCreateAccountButtonClick()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Return to Sign In
+      </button>
+    </div>
+    </div>
+  </form>
+  <p class="text-center text-gray-500 text-xs">
+    &copy;2020 Acme Corp. All rights reserved.
+  </p>
+</div>

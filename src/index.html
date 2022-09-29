@@ -6,8 +6,27 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/7ce610325b.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.tiny.cloud/1/yiptdjttg4ivb4nuuly2rw7dz0czli0m79nl42ve5b9f1pz2/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <link href="assets/themes/prism.css" rel="stylesheet" />
 </head>
-<body>
+<body style="margin:0;padding:0">
   <app-root></app-root>
+
+<script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new Tooltip(tooltipTriggerEl);
+  });
+</script>
+<script>
+
+</script>
+<script src="assets/js/prism.js"></script>
 </body>
+
 </html>

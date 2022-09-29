@@ -1,0 +1,39 @@
+
+<div class="container mx-auto px-4 bg-slate-100">
+
+  <div class="flex flex-col">
+
+
+  <a href="#" routerLink="/tutorial/admin/create/" class="text-center font-bold inline-block mx-2 my-2 px-6 py-2 border-2 border-blue-600 text-blue-600 text-sm leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Create New Post</a>
+
+  <table class="">
+    <thead class="border-b">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Slug</th>
+      <th>Description</th>
+      <th>Creator Username</th>
+      <th>Creation Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+    <tr *ngFor="let tutorial of tutorials">
+      <td>{{ tutorial.id }}</td>
+      <td>{{ tutorial.title }}</td>
+      <td>{{ tutorial.slug }}</td>
+      <td>{{ tutorial.description }}</td>
+      <td>{{ tutorial.username }}</td>
+      <td>{{ tutorial.creationDate }}</td>
+      <td>
+        <a href="#" [routerLink]="['/tutorial/admin/', tutorial.slug, 'view']" class="inline-block mx-2 my-2 px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">View</a>
+        <a href="#" [routerLink]="['/tutorial/admin/', tutorial.slug, 'edit']" class="inline-block mx-2 my-2 px-6 py-2 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Edit</a>
+        <button type="button" (click)="deleteTutorial(tutorial.id)" class="inline-block mx-2 my-2 px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Delete</button>
+      </td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+

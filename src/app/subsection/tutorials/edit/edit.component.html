@@ -1,0 +1,178 @@
+<div class="container mx-auto m-5 bg-slate-300" *ngIf="tutorial">
+  <h1>Update Post</h1>
+
+  <a href="#" routerLink="/tutorial/admin" class="inline-block mx-2 my-2 px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Back</a>
+  <a (click)="toggleHtml()" class="float-right inline-block my-2 px-6 py-2 border-2 border-blue-600 text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Edit HTML</a>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+      <div class="form-group">
+          <label for="title">Title:</label>
+          <input
+              formControlName="title"
+              id="title"
+              type="text"
+              [(ngModel)]="tutorial.title"
+              class="form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+
+              ">
+          <div *ngIf="f['title'].touched && f['title'].invalid" class="text-xs text-red-500">
+              <div *ngIf="f['title'].errors && f['title'].errors['required']">Title is required.</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="slug">Slug:</label>
+        <input
+            formControlName="slug"
+            id="slug"
+            type="text"
+            [(ngModel)]="tutorial.slug"
+            class="form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0">
+        <div *ngIf="f['slug'].touched && f['slug'].invalid" class="text-xs text-red-500">
+            <div *ngIf="f['slug'].errors">Slug is required.</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="thumbnailImageUrl">Thumbnail URL:</label>
+      <input
+          formControlName="thumbnailImageUrl"
+          id="thumbnailImageUrl"
+          type="text"
+          [(ngModel)]="tutorial.thumbnailImageUrl"
+          class="form-control
+          block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0">
+      <div *ngIf="f['thumbnailImageUrl'].touched && f['thumbnailImageUrl'].invalid" class="text-xs text-red-500">
+          <div *ngIf="f['thumbnailImageUrl'].errors">thumbnailImageUrl is required.</div>
+      </div>
+  </div>
+
+  <div class="form-group">
+    <label for="tags">Tags:</label>
+    <input
+        formControlName="tags"
+        id="tags"
+        type="text"
+        [(ngModel)]="tutorial.tags"
+        class="form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0">
+    <div *ngIf="f['tags'].touched && f['tags'].invalid" class="text-xs text-red-500">
+        <div *ngIf="f['tags'].errors">tags is required.</div>
+    </div>
+</div>
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input
+          formControlName="description"
+          id="description"
+          type="text"
+          [(ngModel)]="tutorial.description"
+          class="form-control
+          block
+          w-full
+          px-3
+          py-1.5
+          text-base
+          font-normal
+          text-gray-700
+          bg-white bg-clip-padding
+          border border-solid border-gray-300
+          rounded
+          transition
+          ease-in-out
+          m-0">
+      <div *ngIf="f['description'].touched && f['description'].invalid" class="alert alert-danger">
+          <div *ngIf="f['description'].errors">description is required.</div>
+      </div>
+  </div>
+
+  <div *ngIf="viewHtmlCode;else viewHtmlStyled">
+
+    <div class="form-group">
+      <label for="content">Raw HTML Content</label>
+    <textarea
+    id="content"
+    class="form-control"
+    outputFormat="html"
+    rows="20" cols="135"
+    formControlName="content">{{tutorial.content}}</textarea>
+    </div>
+  </div>
+
+  <ng-template #viewHtmlStyled>
+      <div class="form-group">
+        <label for="content">Content</label>
+      <editor
+      formControlName="content"
+      id="content"
+      apiKey="yiptdjttg4ivb4nuuly2rw7dz0czli0m79nl42ve5b9f1pz2"
+      class="form-control"
+      [(ngModel)]="tutorial.content"
+      outputFormat="html"
+      (onChange)="handleEvent($event)"
+      [init]="{
+        height: 500,
+        menubar: true,
+        plugins: 'lists link image paste help wordcount',
+        link_assume_external_targets: true,
+        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | help'
+      }"
+    ></editor>
+    </div>
+  </ng-template>
+
+      <button class="inline-block mx-2 my-2 px-6 py-2 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="submit" [disabled]="!form.valid">Update</button>
+  </form>
+</div>

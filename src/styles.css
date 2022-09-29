@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import "prismjs/themes/prism.css";
+
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Default Font */
+@font-face {
+  font-family: OCRA;
+  src: url("./assets/fonts/mainfont/OCR-aregular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-font {
+	font-family: OCRA, Helvetica;
+}
+
+body {
+  font-family: OCRA, Helvetica;
+  margin: 0px auto;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme('borderColor.DEFAULT', currentColor);
+}
+img{
+  display: inline-block;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+

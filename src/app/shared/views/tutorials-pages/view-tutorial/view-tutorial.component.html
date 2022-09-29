@@ -1,0 +1,53 @@
+
+<div class="grid grid-cols-3 gap-4">
+  <div class="container mx-auto bg-white rounded-xl col-span-3 m-10" *ngIf="tutorial">
+
+    <h1 class="text-center text-5xl text-blue-600 pt-5">{{tutorial.title}}</h1>
+
+    <div>
+      <p class="text-center text-s pt-5">{{tutorial.description}} - Published {{tutorial.creationDate}}</p>
+  </div>
+
+
+  <div>
+    <app-sharebuttons></app-sharebuttons>
+  </div>
+
+  <div class="p-3">
+  <a href="#" routerLink="/tutorial" class="text-center mx-2 my-2 px-6 py-3 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Return</a>
+    </div>
+
+
+  <div class="hero container max-w-screen-lg mx-auto pb-10 flex">
+  <img [src]="getThumbnailImage()" class="w-32 md:w-64 lg:w-96 mx-auto">
+
+</div>
+
+    <div class="pb-20 mt-5 p-5">
+
+      <div *ngIf="viewHtmlCode;else viewHtmlStyled">
+        <div class="text-2xl">{{tutorial.content}}</div>
+      </div>
+
+      <ng-template #viewHtmlStyled>
+        <div class="text-2xl" [innerHTML]="trustedHtml"></div>
+      </ng-template>
+
+    </div>
+    </div>
+
+    <script>
+
+      function myFunction() {
+        var element, name, arr;
+        element = document.querySelector("code")
+        name = "mystyle";
+        arr = element.className.split(" ");
+        if (arr.indexOf(name) == -1) {
+            element.className += " " + name;
+        }
+      }
+
+    </script>
+
+  </div>
