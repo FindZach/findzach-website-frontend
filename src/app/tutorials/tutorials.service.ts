@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import {  Observable, throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Tutorial } from './tutorial';
 
@@ -12,7 +12,7 @@ import { Tutorial } from './tutorial';
 })
 export class TutorialsService {
 
-  private apiURL = "http://localhost:8080";
+  private apiURL = "http://localhost:8080/api";
 
   /*------------------------------------------
   --------------------------------------------
