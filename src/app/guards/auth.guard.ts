@@ -21,7 +21,7 @@ public isLoggedIn(): boolean {
       status = true;
    }
      else {
-      status = false; test
+      status = false;
       }
    return status;
    }
