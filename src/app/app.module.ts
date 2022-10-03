@@ -36,6 +36,11 @@ import { ProjectComponent } from './shared/components/project/project.component'
 import { ProjectCardComponent } from './shared/components/project/project-card/project-card.component';
 import { TutorialListSidemenuComponent } from './shared/components/tutorial-list-sidemenu/tutorial-list-sidemenu.component';
 
+
+import { httpInterceptorProviders } from './interceptors/http.interceptor';
+import { RegisterComponent } from './shared/components/register/register.component';
+import { UserProfileComponent } from './shared/views/user-profile/user-profile.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +63,9 @@ import { TutorialListSidemenuComponent } from './shared/components/tutorial-list
     ProjectPagesComponent,
     ProjectComponent,
     ProjectCardComponent,
-    TutorialListSidemenuComponent
+    TutorialListSidemenuComponent,
+    RegisterComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +76,7 @@ import { TutorialListSidemenuComponent } from './shared/components/tutorial-list
     EditorModule,
     FormsModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, httpInterceptorProviders],
   bootstrap: [AppComponent],
   exports: [
     PrismComponent,
