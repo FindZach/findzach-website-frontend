@@ -1,4 +1,4 @@
-<img>https://i.gyazo.com/e290e2d5e86fb373acb3b519b73748c5.png</img>
+<img src="https://i.gyazo.com/e290e2d5e86fb373acb3b519b73748c5.png" alt="FindZach Tutorial Website Section Display">
 
 # FindZachV3
 
