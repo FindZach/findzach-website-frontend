@@ -1,9 +1,15 @@
-<div class="container mx-auto m-5 bg-white">
+<div class="grid grid-rows grid-cols-5 gap-4">
 
-  <p class="text-center text-5xl text-black p-10">Programming Tutorial List</p>
+  <div class="row-span-5 col-span-1 rounded-lg bg-white ml-5 mr-5 mb-8 flex-wrap hidden lg:block">
+
+    <app-tutorial-list-sidemenu></app-tutorial-list-sidemenu>
+
+  </div>
+<div class="container mx-auto bg-white col-span-5 lg:col-span-3 rounded">
+  <p class="text-center text-5xl text-cyan-700 p-2"> Programming Tutorial List </p>
 </div>
 
-<div class="container mx-auto bg-slate-50 w-full h-full">
+<div class="container row-span-2 col-span-5 lg:col-span-3 mx-auto bg-slate-50 w-full h-full rounded">
   <!-- Container for demo purpose -->
 <div class="container mb-24 px-6 mx-auto pt-10">
 
@@ -40,7 +46,7 @@
 
 
 <!-- Container for demo purpose -->
-<div class="container my-24 px-6 mx-auto bg-white pb-2">
+<div class="container my-24 px-6 mx-auto bg-white pb-2 rounded">
 
   <!-- Section: Design Block -->
   <section class="mb-32 text-gray-800 text-center lg:text-left">
@@ -63,7 +69,7 @@
           <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
             <path fill="currentColor"
               d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z" />
-            </svg>Hot news
+            </svg>{{tutorials[0].tags}}
         </div>
         <p class="text-gray-500">
 
@@ -139,4 +145,9 @@
 </div>
 <!-- Container for demo purpose -->
 
+
+</div>
+<div class="row-span-1 p-10">
+
+</div>
 </div>

@@ -34,6 +34,7 @@ import { PrismComponent } from './shared/components/prism/prism.component';
 import { ProjectPagesComponent } from './shared/views/project-pages/project-pages.component';
 import { ProjectComponent } from './shared/components/project/project.component';
 import { ProjectCardComponent } from './shared/components/project/project-card/project-card.component';
+import { TutorialListSidemenuComponent } from './shared/components/tutorial-list-sidemenu/tutorial-list-sidemenu.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ProjectCardComponent } from './shared/components/project/project-card/p
     PrismComponent,
     ProjectPagesComponent,
     ProjectComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    TutorialListSidemenuComponent
   ],
   imports: [
     BrowserModule,
