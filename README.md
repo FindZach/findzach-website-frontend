@@ -1,5 +1,5 @@
 ## Tutorial Page HomePage (Last Edited 10/3/2022)
-<img src="https://i.gyazo.com/e290e2d5e86fb373acb3b519b73748c5.png" alt="FindZach Tutorial Website Section Display">
+<img src="https://i.gyazo.com/c1945b7197075d39fab29c4a782befc1.png" alt="FindZach Tutorial Website Section Display">
 
 ### Tutorial Admin Edit Section
 <img src="https://i.gyazo.com/8ac565c3533f01424c6e14b4e67a4537.png" alt="FindZach Tutorial Website - Admin Edit Section">
