@@ -1,3 +1,9 @@
+## Tutorial Page HomePage (Last Edited 10/3/2022)
+<img src="https://i.gyazo.com/17f64d68a8bb190d8fa9f47abe097340.png" alt="FindZach Tutorial Website Section Display">
+
+### Tutorial Admin Edit Section
+<img src="https://i.gyazo.com/8ac565c3533f01424c6e14b4e67a4537.png" alt="FindZach Tutorial Website - Admin Edit Section">
+
 # FindZachV3
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
