@@ -21,9 +21,8 @@ import { ViewComponent } from './subsection/tutorials/view/view.component';
 import { SafeHtmlPipe } from './pipe/safe-html-pipe.pipe';
 import { EditComponent } from './subsection/tutorials/edit/edit.component';
 import { CreateComponent } from './subsection/tutorials/create/create.component';
-
-
 import { EditorModule } from '@tinymce/tinymce-angular';
+
 import { SharebuttonsComponent } from './shared/components/sharebuttons/sharebuttons.component';
 import { TutorialIndexComponent } from './shared/views/tutorials-pages/index/index.component';
 import { ViewTutorialComponent } from './shared/views/tutorials-pages/view-tutorial/view-tutorial.component';
