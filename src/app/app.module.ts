@@ -40,6 +40,7 @@ import { TutorialListSidemenuComponent } from './shared/components/tutorial-list
 import { httpInterceptorProviders } from './interceptors/http.interceptor';
 import { RegisterComponent } from './shared/components/register/register.component';
 import { UserProfileComponent } from './shared/views/user-profile/user-profile.component';
+import { MyPublicJournalComponent } from './shared/views/my-public-journal/my-public-journal.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { UserProfileComponent } from './shared/views/user-profile/user-profile.c
     ProjectCardComponent,
     TutorialListSidemenuComponent,
     RegisterComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    MyPublicJournalComponent
   ],
   imports: [
     BrowserModule,

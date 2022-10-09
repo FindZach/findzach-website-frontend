@@ -1,13 +1,10 @@
-<div class="grid grid-rows grid-cols-5 gap-4">
+<div id="tutorialViews" class="grid grid-rows grid-cols-5 gap-4">
 
-  <div class="row-span-5 col-span-2 xl:col-span-1 rounded-lg bg-white ml-5 mr-5 mb-8 flex-wrap hidden lg:block">
+  <div class="row-span-5 col-span-2 2xl:col-span-1 rounded-lg bg-white ml-5 mr-5 mb-8 flex-wrap hidden lg:block">
 
     <app-tutorial-list-sidemenu></app-tutorial-list-sidemenu>
 
   </div>
-<div class="container mx-auto bg-white col-span-5 lg:col-span-3 rounded">
-  <p class="text-center text-5xl text-cyan-700 p-2"> Programming Tutorial List </p>
-</div>
 
 <div class="container row-span-2 col-span-5 lg:col-span-3 mx-auto bg-slate-50 w-full h-full rounded">
   <!-- Container for demo purpose -->
@@ -25,7 +22,7 @@
         <div class="grow-0 shrink-0 basis-auto w-full md:w-8/12">
           <div class="px-6 py-12 md:px-12">
             <h2 class="text-3xl font-bold mb-6">
-              <span class="text-red-600">Latest Tutorial</span> <span *ngIf="getLatestTutorial() != null">- {{getLatestTutorial().title}} </span>
+              <span class="text-red-600">Latest Tutorial</span> <span *ngIf="getLatestTutorial() != null"> - {{getLatestTutorial().title}} </span>
             </h2>
             <p class="text-gray-500 mb-6 pb-2" *ngIf="getLatestTutorial() != null">
               {{getLatestTutorial().description}}
@@ -46,10 +43,10 @@
 
 
 <!-- Container for demo purpose -->
-<div class="container my-24 px-6 mx-auto bg-white pb-2 rounded">
+<div class="container my-24 px-6 mx-auto pb-2 rounded">
 
   <!-- Section: Design Block -->
-  <section class="mb-32 text-gray-800 text-center lg:text-left">
+  <section class="container bg-white mb-32 text-gray-800 text-center lg:text-left p-5 rounded shadow-lg shadow-stone-600">
     <h2 class="text-3xl font-bold mb-12 text-center">Popular Tutorials</h2>
 
 

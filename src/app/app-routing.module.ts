@@ -13,6 +13,7 @@ import { EditComponent } from './subsection/tutorials/edit/edit.component';
 import { CreateComponent } from './subsection/tutorials/create/create.component';
 import { ViewTutorialComponent } from './shared/views/tutorials-pages/view-tutorial/view-tutorial.component';
 import { TutorialIndexComponent } from './shared/views/tutorials-pages/index/index.component';
+import { MyPublicJournalComponent } from './shared/views/my-public-journal/my-public-journal.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,8 @@ const routes: Routes = [
   { path: 'main-page', component: MainpageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'projects', component: ProjectsComponent },
+
+  { path: 'journal', component: MyPublicJournalComponent },
   /**
    * End of Starter Routes
    */
