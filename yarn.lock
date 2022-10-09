@@ -1449,14 +1449,6 @@
   resolved "https://registry.npmjs.org/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@tinymce/tinymce-angular@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/@tinymce/tinymce-angular/-/tinymce-angular-7.0.0.tgz"
-  integrity sha512-IKNaG/ihlxE1XCfq6lzULbnsqZO9KNJtlpu5jo6JDJDL9zcFzj/N2A16Kk7rTj1yfmDoB1IXAk/BpMOvgDY8cg==
-  dependencies:
-    tinymce "^6.0.0 || ^5.5.0"
-    tslib "^2.3.0"
-
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-2.0.0.tgz"
@@ -6088,11 +6080,6 @@ tinymce@5.10.3:
   version "5.10.3"
   resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.10.3.tgz#9485cf00159fd70c4948cb5e9dd49bce2a775899"
   integrity sha512-O59ssHNnujWvSk5Gt8hIGrdNCMKVWVQv9F8siAgLTRgTh0t3NDHrP1UlLtCxArUi9DPWZvlBeUz8D5fJTu7vnA==
-
-"tinymce@^6.0.0 || ^5.5.0":
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/tinymce/-/tinymce-6.2.0.tgz"
-  integrity sha512-zLjbFrg0hbtJ6PxmZUjQY6zyIOM/mLrWGTvhBec7XwYwoW1E0xXMQzy2tgMTh3OvJpsclgqf2ZMjmwcv4Cludw==
 
 "tinymce@http://download.ephox.com/tinymce/community/tinymce_nightly.tgz":
   version "6.2.0"
