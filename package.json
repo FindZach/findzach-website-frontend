@@ -4,6 +4,10 @@
   "liveServer.settings.ignoreFiles": [
     "**"
   ],
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.11.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
