@@ -5,8 +5,6 @@ import { TutorialsService } from 'src/app/tutorials/tutorials.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 
-import { AngularEditorConfig } from '@kolkov/angular-editor';
-
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',
@@ -14,25 +12,6 @@ import { AngularEditorConfig } from '@kolkov/angular-editor';
 })
 export class EditComponent implements OnInit {
 
-  config: AngularEditorConfig = {
-    editable: true,
-    spellcheck: true,
-    height: '10rem',
-    minHeight: '5rem',
-    defaultParagraphSeparator: 'p',
-    defaultFontName: 'Arial',
-    customClasses: [
-      {
-        name: 'Quote',
-        class: 'quoteClass',
-      },
-      {
-        name: 'Title Heading',
-        class: 'titleHead',
-        tag: 'h1',
-      },
-    ],
-  };
 
   rawslug!: string;
   tutorial!: Tutorial;
@@ -60,7 +39,7 @@ export class EditComponent implements OnInit {
       this.tutorial = data;
 
       console.log("tags: " + this.tutorial.tags)
-      this.config.placeholder = this.tutorial.content;
+      //this.config.placeholder = this.tutorial.content;
     });
 
     this.form = new FormGroup({

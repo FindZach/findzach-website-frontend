@@ -154,22 +154,7 @@
   <ng-template #viewHtmlStyled>
       <div class="form-group">
         <label for="content">Content</label>
-      <editor
-      formControlName="content"
-      id="content"
-      apiKey="yiptdjttg4ivb4nuuly2rw7dz0czli0m79nl42ve5b9f1pz2"
-      class="form-control"
-      [(ngModel)]="tutorial.content"
-      outputFormat="html"
-      (onChange)="handleEvent($event)"
-      [init]="{
-        height: 500,
-        menubar: true,
-        plugins: 'lists link image paste help wordcount',
-        link_assume_external_targets: true,
-        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | help'
-      }"
-    ></editor>
+
     </div>
   </ng-template>
 

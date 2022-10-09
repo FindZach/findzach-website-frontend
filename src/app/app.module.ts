@@ -21,7 +21,6 @@ import { ViewComponent } from './subsection/tutorials/view/view.component';
 import { SafeHtmlPipe } from './pipe/safe-html-pipe.pipe';
 import { EditComponent } from './subsection/tutorials/edit/edit.component';
 import { CreateComponent } from './subsection/tutorials/create/create.component';
-import { EditorModule } from '@tinymce/tinymce-angular';
 
 import { SharebuttonsComponent } from './shared/components/sharebuttons/sharebuttons.component';
 import { TutorialIndexComponent } from './shared/views/tutorials-pages/index/index.component';
@@ -74,7 +73,6 @@ import { MyPublicJournalComponent } from './shared/views/my-public-journal/my-pu
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
-    EditorModule,
     FormsModule
   ],
   providers: [AuthGuard, httpInterceptorProviders],

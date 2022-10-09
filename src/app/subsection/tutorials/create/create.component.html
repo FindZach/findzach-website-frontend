@@ -140,22 +140,8 @@
 
     <div class="form-group">
       <label for="content">Content</label>
-    <editor
-    formControlName="content"
-    id="content"
-    apiKey="yiptdjttg4ivb4nuuly2rw7dz0czli0m79nl42ve5b9f1pz2"
-    class="form-control"
-    outputFormat="html"
 
-    [init]="{
-      height: 500,
-      menubar: true,
-      link_assume_external_targets: true,
-      plugins: 'lists link image paste help wordcount',
-      toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | help'
-    }"
-  >
-</editor>
+
     </div>
 
       <button class="inline-block mx-2 my-2 px-6 py-2 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="submit" [disabled]="!form.valid">Submit</button>
