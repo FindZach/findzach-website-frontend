@@ -10,7 +10,7 @@
 /* Default Font */
 @font-face {
   font-family: OCRA;
-  src: url("./assets/fonts/mainfont/OCR-aregular.ttf");
+  src: url("../assets/fonts/mainfont/ocr-aregular.ttf");
   font-weight: 400;
   font-style: normal;
 }
